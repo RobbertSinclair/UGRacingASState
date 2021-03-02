@@ -8,7 +8,7 @@ enum States {
     AS_EMERGENCY = 3,
     AS_FINISHED = 4,
     MANUAL_DRIVING = 5
-}
+};
 
 enum ASSIStates {
     OFF = 0,
@@ -16,7 +16,7 @@ enum ASSIStates {
     BLUE_FLASH = 2,
     YELLOW_CONT = 3,
     BLUE_CONT = 4
-}
+};
 
 
 class StateFactory
@@ -27,9 +27,12 @@ class StateFactory
         bool getTS();
         void setSA(bool SA);
         bool getSA();
+        void setSB(bool SB);
+        bool getSB();
         void setEBS(bool EBS);
         bool getEBS();
         void setR2D(bool R2D);
+        bool getR2D();
         ASSIStates getASSI();
         void setASSI(ASSIStates assi);
     private:
