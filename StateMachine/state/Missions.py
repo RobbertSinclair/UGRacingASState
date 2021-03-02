@@ -1,33 +1,29 @@
 from AbstractMission import AbstractMission
 
-class AccelerationMission(AbstractMission):
-	def __init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage):
-		super().__init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage)
+#class AbstractMissionAbstractMission(AbstractMission):
+#	def __init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage):
+#		super().__init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage)
 
+class AccelerationMission(AbstractMission):
+	print("AccelerationMission Loaded")
 
 class SkidpadMission(AbstractMission):
-	def __init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage):
-		super().__init__(self, TS, R2D, SA, SB, EBS, ASSI, stage)
+	print("SkidpadMission Loaded")
 
 class AutocrossMission(AbstractMission):
-	def __init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage):
-		super().__init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage)
+	print("AutocrossMission Loaded")
 
 class TrackDriveMission(AbstractMission):
-	def __init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage):
-		super().__init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage)
+	print("TrackDriveMission Loaded")
 
 class EBSTest(AbstractMission):
-	def __init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage):
-		super().__init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage)
+	print("EBSTest Loaded")
 
 class Inspection(AbstractMission):
-	def __init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage):
-		super().__init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage)
+	print("Inspection Loaded")
 
 class ManualDriving(AbstractMission):
-	def __init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage):
-		super().__init__(self, TS, R2D, SA, SB, EBS, ASSI, RES, ASMS, stage)
+	print("ManualDriving Loaded")
 
 
 
