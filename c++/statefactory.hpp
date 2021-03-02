@@ -35,6 +35,7 @@ class StateFactory
         bool getR2D();
         ASSIStates getASSI();
         void setASSI(ASSIStates assi);
+        void setStateMetrics();
     private:
         bool TS;
         bool SA;
