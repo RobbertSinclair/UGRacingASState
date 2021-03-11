@@ -18,7 +18,18 @@ class AbstractMission
     public:
         AbstractMission();
         void run();
-        void transition();
+        void runASReady();
+        void runASDriving();
+        void runASEmergency();
+        void runASFinished();
+        void runManualDriving();        
+        void transitionControl();
+        void transitionASOff();
+        void transitionASEmergency();
+        void transitionASReady();
+        void transitionASDriving();
+        void transitionASFinished();
+        void transitionManual();
     private:
         StateFactory stateDecider;
         Missions mission; 
@@ -27,39 +38,79 @@ class AbstractMission
 class NotSelectedMission : public AbstractMission {
     public:
         void run();
+        void runASReady();
+        void runASDriving();
+        void runASEmergency();
+        void runASFinished();
+        void runManualDriving();
 };
 
 class AccelerationMission : public AbstractMission {
     public:
         void run();
+        void runASReady();
+        void runASDriving();
+        void runASEmergency();
+        void runASFinished();
+        void runManualDriving();
 };
 
 class SkidPadMission : public AbstractMission {
     public:
         void run();
+        void runASReady();
+        void runASDriving();
+        void runASEmergency();
+        void runASFinished();
+        void runManualDriving();
 };
 
 class AutocrossMission : public AbstractMission {
     public:
         void run();
+        void runASReady();
+        void runASDriving();
+        void runASEmergency();
+        void runASFinished();
+        void runManualDriving();
 };
 
 class TrackDriveMission : public AbstractMission {
     public:
         void run();
+        void runASReady();
+        void runASDriving();
+        void runASEmergency();
+        void runASFinished();
+        void runManualDriving();
 };
 
 class AccelerationMission : public AbstractMission {
     public:
         void run();
+        void runASReady();
+        void runASDriving();
+        void runASEmergency();
+        void runASFinished();
+        void runManualDriving();
 };
 
 class BrakeTestMission : public AbstractMission {
     public:
         void run();
+        void runASReady();
+        void runASDriving();
+        void runASEmergency();
+        void runASFinished();
+        void runManualDriving();
 };
 
 class ManualMission : public AbstractMission {
     public:
         void run();
+        void runASReady();
+        void runASDriving();
+        void runASEmergency();
+        void runASFinished();
+        void runManualDriving();
 };

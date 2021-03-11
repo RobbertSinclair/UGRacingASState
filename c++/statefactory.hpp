@@ -23,18 +23,8 @@ class StateFactory
 {
     public:
         StateFactory(States State);
-        void setTS(bool TS);
-        bool getTS();
-        void setSA(bool SA);
-        bool getSA();
-        void setSB(bool SB);
-        bool getSB();
-        void setEBS(bool EBS);
-        bool getEBS();
-        void setR2D(bool R2D);
-        bool getR2D();
-        ASSIStates getASSI();
-        void setASSI(ASSIStates assi);
+        void preUpdateState();
+        void postUpdateState();
         void setStateMetrics();
     private:
         bool TS;
