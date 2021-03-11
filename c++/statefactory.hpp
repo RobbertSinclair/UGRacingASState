@@ -26,6 +26,7 @@ class StateFactory
         void preUpdateState();
         void postUpdateState();
         void setStateMetrics();
+        States getCurrentState();
     private:
         bool TS;
         bool SA;

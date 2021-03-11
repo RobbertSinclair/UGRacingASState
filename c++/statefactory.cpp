@@ -6,6 +6,10 @@ StateFactory::StateFactory(States State)
     State = State;
 }
 
+States StateFactory::getCurrentState() {
+    return State;
+}
+
 void StateFactory::setStateMetrics()
 {
     switch(State) 

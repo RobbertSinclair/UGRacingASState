@@ -18,6 +18,7 @@ class AbstractMission
     public:
         AbstractMission();
         void run();
+        void runASOff();
         void runASReady();
         void runASDriving();
         void runASEmergency();
@@ -38,6 +39,7 @@ class AbstractMission
 class NotSelectedMission : public AbstractMission {
     public:
         void run();
+        void runASOff();
         void runASReady();
         void runASDriving();
         void runASEmergency();
@@ -48,6 +50,7 @@ class NotSelectedMission : public AbstractMission {
 class AccelerationMission : public AbstractMission {
     public:
         void run();
+        void runASOff();
         void runASReady();
         void runASDriving();
         void runASEmergency();
@@ -58,6 +61,7 @@ class AccelerationMission : public AbstractMission {
 class SkidPadMission : public AbstractMission {
     public:
         void run();
+        void runASOff();
         void runASReady();
         void runASDriving();
         void runASEmergency();
@@ -68,6 +72,7 @@ class SkidPadMission : public AbstractMission {
 class AutocrossMission : public AbstractMission {
     public:
         void run();
+        void runASOff();
         void runASReady();
         void runASDriving();
         void runASEmergency();
@@ -78,6 +83,7 @@ class AutocrossMission : public AbstractMission {
 class TrackDriveMission : public AbstractMission {
     public:
         void run();
+        void runASOff();
         void runASReady();
         void runASDriving();
         void runASEmergency();
@@ -88,6 +94,7 @@ class TrackDriveMission : public AbstractMission {
 class AccelerationMission : public AbstractMission {
     public:
         void run();
+        void runASOff();
         void runASReady();
         void runASDriving();
         void runASEmergency();
@@ -98,6 +105,7 @@ class AccelerationMission : public AbstractMission {
 class BrakeTestMission : public AbstractMission {
     public:
         void run();
+        void runASOff();
         void runASReady();
         void runASDriving();
         void runASEmergency();
@@ -108,6 +116,7 @@ class BrakeTestMission : public AbstractMission {
 class ManualMission : public AbstractMission {
     public:
         void run();
+        void runASOff();
         void runASReady();
         void runASDriving();
         void runASEmergency();
